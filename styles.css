@@ -1,0 +1,438 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.jumbotron {
+    position: relative;
+    color: white;
+    background: none;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jumbotron::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.jumbotron video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.jumbotron .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.jumbotron h1,
+.jumbotron .display-4 {
+    text-align: center;
+    width: 100%;
+}
+
+.jumbotron h1 {
+    font-size: 3.5rem;
+    color:#000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: rise 2s ease-in-out;
+}
+
+.jumbotron .display-4 {
+    font-weight: 300;
+    animation: rise 2s ease-in-out;
+}
+
+@keyframes rise {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 1;
+}
+
+footer {
+    background: #343a40;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin: 5px 0;
+}
+
+.footer ul li a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    color: #fff;
+}
+
+.navbar {
+    background: #007bff;
+}
+
+.navbar-brand, .nav-link {
+    color: #fff !important;
+}
+
+.nav-link:hover {
+    color: #ddd !important;
+}
+
+.btn-primary {
+    background-color: #5fc2ff;
+    border-color: #30c2eb;
+}
+
+.btn-primary:hover {
+    background-color: #30c2eb;
+    border-color: #30c2eb;
+}
+
+.container h2 {
+    color: #010709;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.form-control:focus {
+    border-color: #30c2eb;
+    box-shadow: 0 0 0 0 0 0.2rem rgba(255, 126, 95, 0.25);
+}
+
+/* Styles for services section */
+
+
+.services-section .service-item {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.service-icon {
+    width: 300px; /* Set a fixed width for the videos */
+    height: 200px; /* Set a fixed height for the videos */
+    position: relative;
+}
+
+.service-icon video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.service-icon i {
+    font-size: 48px;
+    color: #007bff;
+    position: absolute;
+    bottom: -24px; /* Adjust this value to position the icon correctly */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-item h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-top: 30px; /* Adjust this value to create space for the icon */
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.service-item p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+    text-align: center;
+}
+
+.service-item a {
+    font-size: 16px;
+    font-weight: 600;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.service-item a:hover {
+    color: #0056b3;
+}
+/* Main container to hold the background image */
+.background-image {
+    position: relative;
+    background-image: url('hcareer.jpg'); /* Path to your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Adjust the height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff; /* Ensure text is readable */
+    animation: rise 1.5s ease forwards; /* Apply the rising animation */
+    opacity: 0; /* Initially hide the image */
+}
+
+/* Overlay for blending effect */
+.background-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity for blending effect */
+    z-index: 1;
+}
+
+/* Content inside the container */
+.background-image .col-md-6 {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff; /* Ensure text is readable */
+    animation: rise 2s ease-in-out;
+}
+@keyframes rise {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#careersBtn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#careersBtn:hover {
+    background-color: #0056b3;
+}
+/* career page */
+.hero {
+    background: url('hiring.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.job-listings {
+    padding: 2em 1em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.job {
+    background: #f1f1f1;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1em;
+}
+
+.job h3 {
+    margin: 0.5em 0;
+}
+
+.apply-btn {
+    background: #0056b3;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.apply-btn:hover {
+    background: #004494;
+}
+.application-form {
+    padding: 2em 1em;
+    max-width: 600px;
+    margin: 0 auto;
+    background: #f1f1f1;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.application-form h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.form-group {
+    margin-bottom: 1em;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.submit-btn {
+    background: #0056b3;
+    color: #fff;
+    border: none;
+    padding: 0.75em 1.5em;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.submit-btn:hover {
+    background: #004494;
+}
+@media (max-width: 1200px) {
+    .services-section .service-item {
+        flex-direction: column;
+    }
+    .service-icon {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero {
+        height: 50vh;
+    }
+    .job-listings {
+        padding: 1em;
+    }
+    .application-form {
+        padding: 1em;
+    }
+    .jumbotron h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .jumbotron h1 {
+        font-size: 2rem;
+    }
+    .jumbotron video {
+        height: 50vh;
+    }
+    .services-section .service-item {
+        margin-bottom: 15px;
+        padding: 15px;
+    }
+    .service-item h3 {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+    .service-item p {
+        font-size: 14px;
+    }
+    .service-item a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand, .nav-link {
+        font-size: 14px;
+    }
+    .btn-primary {
+        padding: 5px 10px;
+    }
+    .container h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .form-control {
+        padding: 5px;
+    }
+    .application-form {
+        padding: 1em 0.5em;
+    }
+    .application-form h2 {
+        font-size: 20px;
+        margin-bottom: 0.5em;
+    }
+    .submit-btn {
+        font-size: 0.875em;
+        padding: 0.5em 1em;
+    }
+    .background-image {
+        height: 50vh;
+    }
+    .jumbotron {
+        height: 50vh;
+    }
+}

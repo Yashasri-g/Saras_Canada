@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saras Canada - Careers</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="index.html">Saras Canada</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Services
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="software-development.html">Software Development</a>
+                        <a class="dropdown-item" href="app-development.html">App Development</a>
+                        <a class="dropdown-item" href="infrastructure-services.html">Infrastructure Services</a>
+                        <a class="dropdown-item" href="cloud-computing.html">Cloud Computing</a>
+                        <a class="dropdown-item" href="staffing.html">Staffing</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCareers" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Careers
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownCareers">
+                        <a class="dropdown-item" href="ceipal.html">CEIPAL</a>
+                        <a class="dropdown-item" href="careers.html">Careers</a>
+                        <a class="dropdown-item" href="full-time-positions.html">Full Time Positions</a>
+                        <a class="dropdown-item" href="referral-program.html">Referral Program</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero"></section>
+    
+    <section class="job-listings">
+        <h2>Current Openings</h2>
+        <div class="job">
+            <h3>Software Developer</h3>
+            <p>Location: Toronto, ON</p>
+            <p>Description: We are looking for a skilled software developer to join our team.</p>
+            <a class="apply-btn">Apply Now</a>
+        </div>
+        <div class="job">
+            <h3>Project Manager</h3>
+            <p>Location: Vancouver, BC</p>
+            <p>Description: We need an experienced project manager to oversee our projects.</p>
+            <a class="apply-btn">Apply Now</a>
+        </div>
+        <!-- Add more job listings as needed -->
+    </section>
+    
+    <section class="application-form">
+        <h2>Apply</h2>
+        <form id="job-application-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="resume">Resume</label>
+                <input type="file" id="resume" name="resume" required>
+            </div>
+            <div class="form-group">
+                <label for="cover-letter">Cover Letter</label>
+                <textarea id="cover-letter" name="cover-letter" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Submit Application</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Company</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Services</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="software-development.html">Software Development</a></li>
+                        <li><a href="app-development.html">App Development</a></li>
+                        <li><a href="infrastructure-services.html">Infrastructure Services</a></li>
+                        <li><a href="cloud-computing.html">Cloud Computing</a></li>
+                        <li><a href="staffing.html">Staffing</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p>&copy; 2024 Saras Canada. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
